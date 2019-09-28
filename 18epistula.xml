@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ODD/epistulae.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/css" href="test.css"?>
+<?xml-stylesheet type="text/xsl" href="extraction_div_quote.xsl"?>
+<?xml-stylesheet type="text/xsl" href="XML-TEI%20vers%20html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="fr">
+        <fileDesc>
+            <titleStmt>
+                <title>18epistula</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Version électronique TEI</edition>   
+                <respStmt> 
+                    <persName xml:id="EP" type="éditeur">Élodie Paupe</persName>
+                    <name>Document de travail dans le cadre d'une thèse de doctorat.</name>   
+                    <resp>Doctorante en philologie classique à l'<placeName nymRef="Neuchâtel">Université de Neuchâtel</placeName>, 
+                        <date type="creation" when="2010-07">juillet 2019</date>
+                    </resp>    
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <authority>Chaire de philologie classique</authority>
+                <address>
+                    <addrLine>Université de Neuchâtel</addrLine>
+                    <addrLine>Faculté de lettres et sciences humaines</addrLine>
+                    <addrLine>Espace Louis Agassiz 1</addrLine>
+                    <addrLine>2000 Neuchâtel</addrLine>
+                    <addrLine>http://www.unine.ch</addrLine>
+                </address>
+                <availability status="restricted" n="CC-BY-NC-SA">
+                    <licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+                    <p>Creative Commons Attribution 4.0 CC BY-NC-SA 4.0 FR</p>
+                    <p>NB: le texte latin employé comme source s'est élevé dans le domaine public.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>
+                    <author key="23387750">Paulin de Nole</author>
+                    <title>Epistulae</title>
+                    <publisher>Skeb, Fontes Christiani, 1990</publisher>
+                    <ptr target="document numérique"/>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <editorialDecl>
+                <p>Les balises seg mettent en évidence les figures d'exemplification identifiées grâce à l'attribut type qui peut prendre les valeurs suivantes:
+                    <list>
+                        <item xml:id="exemple">exemple: Récit narratif mettant en scène un personnage biblique à des fins d'illustrations (preuve,etc.)</item>
+                        <item xml:id="portrait">portrait: portrait de contemporain créé par Paulin.</item>
+                        <item xml:id="comparaison">comparaison: définition à venir.</item>
+                        <item xml:id="métaphore">métaphore: définition à venir.</item>
+                    </list>
+                    L'attribut subtype permet d'identifier l'univers de la figure (biblique, nonbiblique)
+                    L'attribut ana permet d'identifier le sujet de l'exemple ou du portrait; le comparé d'une comparaison ou d'une métaphore.
+                    L'attribut corresp permet d'identifier le comparant d'une comparaison ou d'une métaphore.
+                </p>
+                <p>
+                    Dans cette lettre sont également encodés les topoi de l'épistolographie avec l'élément <seg type="topoi" subtype="formulaire"/>.
+                </p>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName type="émetteur" ref="indexnominum.xml#Paulinus" key="23387750">Paulin de Nole</persName>
+                    <placeName nymRef="Nola">Nole</placeName>
+                    <persName type="récepteur" ref="indexnominum.xml#Vitricius" key="">Victrice</persName>
+                    <placeName nymRef="Rouen">Rouen</placeName>
+                    <date notBefore="0397" notAfter="0398">Fin de l'été 398 (Fabre); 397-398 (Walsh)</date>
+                </correspAction>
+            </correspDesc>
+            <langUsage>
+                <language ident="la">Latin</language>
+            </langUsage>
+        </profileDesc> 
+    </teiHeader>
+    
+    <text xml:lang="la" n="17">
+        <front>
+            <head n="18">Epistula XVIII</head>
+            <div type="legende">
+                <p><quote type="tissé">Intertextualité</quote></p>
+                <!--<p><seg type="portrait">Un portrait</seg></p>-->
+                <p><seg type="métaphore">Une figure d'analogie</seg></p>
+            </div>
+            
+            <div type="sommaire">
+                <div xml:id="n00">
+                    <list rend="numbered">
+                        <item>Mise en place du récit enchâssé
+                        
+                            <list rend="bulleted">
+                                <item><p><ptr target="#n000"/>Plan thématique</p></item>
+                                <item><p><ptr target="Victricius_ep18_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._s_._ti_._tis_word_._mus_lalemma_tu_tuus_vos_vester_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._o_._or_._vi_._mus_._mur_sum_sumus_lalemma_ego_meus_nos_noster_.svg"/>Analyse textométrique des 1<hi rend="sup">ère</hi> et 2<hi rend="sup">e</hi> personnes</p></item>
+                                <item><p><ptr target="Supicius_ep17_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._o_._or_._vi_._mus_._mur_sum_sumus_lalemma_ego_meus_nos_noster_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._s_._ti_._tis_word_._mus_lalemma_tu_tuus_vos_vester_.svg"/>Lettre 17 à Sulpice Sévère</p></item>
+                                <item><p><ptr target="Delphinus_ep14_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._o_._or_._vi_._mus_._mur_sum_sumus_lalemma_ego_meus_nos_noster_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._s_._ti_._tis_word_._mus_lalemma_tu_tuus_vos_vester_.svg"/>Lettre 14 à Delphinus</p></item>
+                                <item><p><ptr target="Augustinus_ep4_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._o_._or_._vi_._mus_._mur_sum_sumus_lalemma_ego_meus_nos_noster_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._s_._ti_._tis_word_._mus_lalemma_tu_tuus_vos_vester_.svg"/>Lettre 4 à Augustin: début de la correspondance</p></item>
+                                <item><p><ptr target="Severus_ep29_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._o_._or_._vi_._mus_._mur_sum_sumus_lalemma_ego_meus_nos_noster_lapos_V_IND_V_SUB_ESSE_IND_ESSE_SUB_V_IMP_word_._s_._ti_._tis_word_._mus_lalemma_tu_tuus_vos_vester_.svg"/>Lettre 29 à Suplice Sévère: éloge de Mélanie</p></item>
+                                <item><p><ptr target="#4"/>Changement de cadre et métaphore des personnages</p></item>
+                            </list>
+                        </item>
+                        
+                        <item><hi rend="italic">Topos</hi> épistolographique christianisé à la sauce virgilienne
+                        
+                            <list rend="bulleted">    
+                                <item><p><ptr target="#9"/>Formulaire</p></item>
+                                <item><p source="#analyse2">Intertextualité virgilienne</p></item>
+                            </list>
+                        </item>
+                        <item>Éloge du "martyr vivant": un jeu de miroirs
+                        
+                            <list rend="bulleted">
+                                <item><p source="#analyse1">Métaphores de Victrice de Rouen</p></item>
+                            </list>
+                        </item>
+                    </list>
+                </div>
+            </div>
+        </front>
+        
+        <body>
+            <salute><persName type="récepteur" ref="indexnominum.xml#Vitricius">Beatissimo semper et venerabili patri Victricio </persName> <persName type="émetteur" ref="indexnominum.xml#Paulinus">Paulinus</persName>.</salute>
+            
+            <div n="1">
+                <p>
+                    <seg type="topoi" subtype="formulaire"><!--<ptr n="#n1"/>-->Quod optantibus aliquamdiu non contigerat, 
+                    id repente insperantibus <persName type="persNT" ref="indexnominum.xml#Christ">domino</persName> donante provenit, 
+                    ut occasio nobis ad <persName type="récepteur" ref="indexnominum.xml#Victricius">venerandam sanctitatem tuam</persName> scribendi per <persName type="porteur" ref="indexnominum.xml#Paschasius">domesticum fidei et eum potissimum fratrem</persName>, 
+                        qui in <persName type="persNT" ref="indexnominum.xml#Christ">domino</persName> tuus pariter ac noster esset, 
+                    daretur.</seg> 
+                    Accidit enim <placeName nymRef="Rome">Romae</placeName> nobis ad celeberrimum <persName type="persNT" ref="indexnominum.xml#Paul">natalis apostolici</persName> diem concurrere <persName type="porteur" ref="indexnominum.xml#Paschasius">benedictum diaconum fratrem nostrum Paschasium</persName>, 
+                        quem praeter gratiam fraterni in sacro ministerio contubernii hoc venerabilius amabiliusque suscepimus, 
+                            quod de <persName type="récepteur" ref="indexnominum.xml#Victricius">sanctitatis tuae</persName> clero et corpore et spiritu esse cognovimus. 
+                    Sed fatemur violentiam nostram, 
+                        qua illum de <placeName nymRef="Rome">urbe</placeName> ad <persName type="récepteur" ref="indexnominum.xml#Victricius">sanctitatem tuam</persName> redire cupientem, 
+                        quamvis festinationem piam iustissimi desiderii probaremus, 
+                    tamen in tuo amore conplexi <placeName nymRef="Nole">Nolam</placeName> perduximus, 
+                        ut et hospitium illic humilitatis nostrae quaedam per illius ingressum tui spiritus aura benediceret 
+                        et diutius quasi quadam tuae gratiae portione frueremur, 
+                        videntes et tenentes eum, 
+                            <seg type="portrait" subtype="nonbiblique" ana="porteur" corresp="indexnominum.xml#Paschasius">quem et institutionis tuae discipulum et viae comitem 
+                            modestia morum 
+                            cordis <quote type="tissé" source="Eph." cert="low"><!-- NT: 4.2 -->humilitas
+                            mansuetudo </quote> <quote type="tissé" source="II Thess." cert="low"><!-- NT: 2.13 -->spiritus 
+                            fides veritatis</quote> et <quote type="tissé" source="Col." cert="high"><!-- NT: 4.6 -->sermo in omnibus sale conditus</quote> probabat.</seg> 
+                    <seg type="topoi" subtype="formulaire"><!-- <ptr n="#n2"/> -->Itaque da veniam <persName type="porteur" ref="indexnominum.xml#Paschasius">fratri nostro</persName> in nobis vel nobis in illo, 
+                        quia 
+                            sive illius tarditas arguatur 
+                            sive praesumptio nostra culpetur, 
+                    utrumque delictum caritas <persName type="persNT" ref="indexnominum.xml#Christ">domini</persName> excusabit tibi, 
+                        qua vel ille nobis parere conpulsus est 
+                        vel nos eum non timuimus invadere et pro nostro iure retinere, 
+                        non adrogantia pervicaci sed »<quote type="tissé" source="I Tim." cert="high"><!-- 1.5 -->corde puro et fide non ficta</quote>« nostrum credentes esse 
+                            quod tuum est 
+                        teque ita vicissim reputaturum non ambigentes, 
+                            ut illum non afuisse tibi duceres eo tempore, 
+                                quo nobiscum fuisse cognosceres.
+                        <seg type="métaphore" subtype="biblique" ana="membres" corresp="corps">Nam etsi regionum intervallis corporaliter disparemur, 
+                    <persName type="persAT" ref="indexnominum.xml#esprit">spiritu tamen domini</persName>, 
+                        in quo vivimus et manemus, 
+                    ubique effuso coniuncti sumus, 
+                        ut <quote type="tissé" source="I Cor." cert="medium"><!-- NT:12.12 -->unius corporis membra</quote> 
+                            et <quote type="tissé" source="Actes" cert="high"><!-- 4.32 -->cor unum et unam animam</quote> habentes in <persName type="Dieu" ref="indexnominum.xml#Dieu">uno deo</persName>.</seg></seg> 
+                </p>
+            </div>  
+            
+            <div n="2">
+                <p>
+                    <seg type="topoi" subtype="formulaire">Quamobrem <seg type="métaphore" subtype="nonbiblique" ana="indexnominum.xml#Paschasius" corresp="miroir">spiritali speculo</seg> mentem erga nos tuam considerantes 
+                        nosque conexos invicem tibi de affectione nostri pectoris vindicavimus nobis 
+                        ut unanimem animum tuum in <persName type="porteur" ref="indexnominum.xml#Paschasius">fratre</persName> retinendo, 
+                        gratia <persName type="persNT" ref="indexnominum.xml#Christ">domini</persName>, 
+                            quae tibi largiter data est, 
+                        id ipsum operante, 
+                        ut <seg type="métaphore" subtype="biblique" ana="membres|vêtement" corresp="chrétiens">in <quote type="tissé" source="I Cor." cert="low"><!-- NT: 12.12 -->corporis etiam tui membris</quote> et in <quote type="tissé" source="Marc" cert="low"><!-- NT:6.56;Matth. 14.36 -->vestimenti tui fimbriis</quote></seg> diligaris,</seg> 
+                        quamvis multos morarum illius dies perdiderimus, 
+                        dum <quote type="tissé" source="Ps." cert="medium"><!-- 140.5 -->corripiente nos in sua misericordia <persName type="persNT" ref="indexnominum.xml#Christ">domino</persName></quote> ad emendationem spiritalem carnali aegritudine verberamur. 
+                    Sed <seg type="métaphore" subtype="biblique" ana="porteur" corresp="remède"><seg type="métaphore" subtype="biblique" ana="indexnominum.xml#Dieu">»<quote type="tissé" source="II Cor." cert="high"><!-- 7.6 -->qui consolatur humiles</quote> 
+                    et <quote type="tissé" source="Ps." cert="high"><!-- 146.3 -->sanat contritos corde</quote> consolatus est nos«</seg> in praesentia <persName type="porteur" ref="indexnominum.xml#Paschasius">fratris nostri benedicti Paschasii</persName>, 
+                        de qua 
+                            dum refrigeramur in spiritu, 
+                        etiam corpore reficiebamur; 
+                    <seg type="métaphore" subtype="biblique" ana="ami" corresp="remède"><quote type="tissé" source="Eccli." cert="medium"><!-- 6.16 -->amicus enim bonus medicina cordis est</quote></seg>, 
+                    et bene <quote type="tissé" source="Matth." cert="low"><!-- 18.20 -->duobus in unum coactis <persName type="persNT" ref="indexnominum.xml#Christ">Christus</persName> interstat</quote>.</seg>
+                </p>
+            </div>  
+            
+            <div n="3">
+                <p>
+                    Neque vero in infirmitate tantum nostra contribulatus et conpassus est, 
+                    sed in <persName type="contemporain" ref="indexnominum.xml#Ursus">nostri carissimi filii Ursi</persName>, 
+                        quem comitem indivulsum peregrinationis suae habuerat, 
+                    gravissimo languore diu confectus est. 
+                    In quo et fidem eius et caritatem in <persName type="persNT" ref="indexnominum.xml#Christ">domino</persName> plenam perspeximus. 
+                    Nam quantum ille laborabat in corpore, 
+                    tantum hic in spiritu macerabatur. 
+                    Et ideo <quote type="tissé" source="Luc" cert="low"><!-- 1.48 -->respexit illum <persName type="persNT" ref="indexnominum.xml#Christ">dominus</persName> in huius humilitate</quote>, 
+                        cumulans et hoc beneficium, 
+                        usque ad mortem infirmatum fide tamen et labore <persName type="porteur" ref="indexnominum.xml#Paschasius">Paschasii</persName>, 
+                        in quem <persName type="persNT" ref="indexnominum.xml#Christ">dominus</persName> experiri voluit potentiam apud se <persName type="saint" ref="indexnominum.xml#Felix">sancti sui confessoris dilectissimi Felicis dominaedii nostri</persName>, 
+                            de periculo invenire salutem. 
+                    Per huius enim ipsius manus genitus, 
+                    in lectulo baptizatus redit. 
+                    Praestabit <persName type="persNT" ref="indexnominum.xml#Christ">idem dominus</persName>, 
+                        qui illum orationibus <persName type="porteur" ref="indexnominum.xml#Paschasius">sancti fratri</persName> 
+                        <persName type="porteur" ref="indexnominum.xml#Paschasius">nostro Paschasio</persName> et sollicitudini cum eo nostrae et inprimis ecclesiae tuae, 
+                        te procul dubio semper in tuis ubilibet positis respiciens, 
+                        redonavit: 
+                        perducat in conspectum tuum incolumem et salvum et <quote type="tissé" source="Rom." cert="medium"><!-- 6.18 --><seg type="métaphore" subtype="biblique" ana="maladie" corresp="péché">liberum peccato </seg> <persName type="contemporain" ref="indexnominum.xml#Ursus">servumque iustitiae</persName></quote>. 
+                    Non ambigimus et ipsum, 
+                        si ad te meruerit pervenire, 
+                    magna fidei incrementa facturum <persName type="porteur" ref="indexnominum.xml#Paschasius">pare Paschasio</persName> et <persName type="récepteur" ref="indexnominum.xml#Victricius">te amborum magistro</persName>.
+                </p>
+            </div>            
+            
+            <div n="4">
+                <p>
+                   <seg type="portrait" subtype="nonbiblique" ana="correspondant" corresp="indexnominum.xml#Victricius"><seg type="métaphore" subtype="biblique" ana="indexnominum.xml#Victricius" corresp="indexnominum.xml#Paul">Notum enim nobis fecit »<seg type="métaphore" subtype="biblique" ana="indexnominum.xml#Paschasius" corresp="indexnominum.xml#Tychicus"><quote type="tissé" source="Eph."><!-- 6.21, Col. 4.7, Actes 20.4 --><persName type="persAT" ref="indexnominum.xml#Tychicus">Tychicus« tuus, 
+                   »carissimus frater et fidelis minister in domino</persName></quote></seg>«, 
+                   non quidem te magis quam in te <persName type="Dieu" ref="indexnominum.xml#Dieu">deum</persName> praedicans</seg>, 
+                   <seg type="métaphore" subtype="biblique" ana="évangile" corresp="lumière">quanta <persName type="persNT" ref="indexnominum.xml#Christ">dominus</persName> per te lumina in obscuris ante regionibus accendisset, 
+                    qui »<quote type="tissé" source="Ps." cert="high"><!-- 134.7 --> educens nubes ab extremo terrae</quote>, 
+                    te« quoque in lucem <persName type="contemporain" ref="indexnominum.xml#chrétiens">populi sui</persName> de extimo orbis eduxit 
+                    et »<quote type="tissé" source="Ps." cert="high"><!-- 134.7 -->clarum fulgur in pluviam« uberem »fecit</quote>«. 
+                    Sicut »<quote type="tissé" source="Matth." cert="high"><!-- 4.15; Es. 9.1 --><placeName>terra <persName type="persAT" ref="indexnominum.xml#Zabulon">Zabulon</persName></placeName>« quondam et »<placeName><persName type="persAT" ref="indexnominum.xml#Nephtalim">Nephthalim</persName></placeName>, 
+                    via maris trans <placeName nymRef="Jourdain">Iordanen</placeName> <placeName nymRef="Galilée">Galilaeae</placeName>, 
+                        qui sedebant in regione umbrae mortis, lucem viderunt magnam</quote>«: 
+                    ita et nunc <placeName nymRef="Gaule du Nord">terra Morinorum</placeName> situ orbis extrema, 
+                        quam barbaris fluctibus fremens tundit <placeName nymRef="océan">oceanus</placeName>, 
+                        gentium populus remotarum, 
+                            qui sedebat in latebris via maris harenosa extra <placeName nymRef="Jourdain">Iordanem</placeName>, 
+                                antequam <quote type="tissé" source="Ps." cert="high"><!-- 64.13 -->pinguescerent fines deserti in ea</quote>, 
+                       orta sibi per tuam sanctitatem a <persName type="persNT" ref="indexnominum.xml#Christ">domino</persName> luce gaudentes corda aspera <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName> intrante posuerunt. 
+                        Ubi quondam deserta silvarum ac littorum pariter intuta <persName type="contemporain" ref="indexnominum.xml#impies">advenae barbari aut latrones incolae</persName> frequentabant, 
+                    nunc venerabiles et angelici <persName type="saint" ref="indexnominum.xml#saints">sanctorum</persName> chori 
+                    urbes oppida insulas silvas 
+                    ecclesiis et monasteriis plebe numerosis, 
+                    pace consonis celebrant. 
+                    Quod quamquam in <placeName nymRef="Gaule">totius Galliae</placeName> populis ut ubique gentium <persName type="persNT" ref="indexnominum.xml#Christ">Christus</persName> operetur, 
+                        qui totum orbem »<quote type="tissé" source="Sap." cert="high"><!-- 6.17 -->circuit quaerens dignos se</quote> 
+                        et <quote type="tissé" source="Sap." cert="high"><!-- 7.27 -->per nationes in animas sanctas se transfert</quote> 
+                        et <quote type="tissé" source="Sap." cert="high"><!-- 6.17 -->in viis« directionis »ostendit se hilariter 
+                        et omni providentia occurrit</quote>« amatoribus suis, 
+                    tamen in <placeName nymRef="Gaule du Nord">remotissimo Nervici littoris tractu</placeName>, 
+                        quem tenui antehac spiritu fides veritatis adflaverat 
+                        et potissimum in »<quote type="tissé" source="Actes" cert="high"><!-- 9.15 -->vas electionis</quote>« excerpsit, 
+                    in te prima refulsit clarius, 
+                    incaluit ardentius 
+                    et propius adparuit, 
+                        et <quote type="tissé" source="Luc" cert="low"><!-- 11.2 ou Matth. 6.9 ou ... -->in quo sanctificaret illic nomen suum</quote> 
+                        et per cuius nomen etiam <quote type="tissé" source="Ovide" cert="medium"><!-- NT: Mét. 5,444 -->solis ab occasu</quote> <quote type="tissé" source="Ps." cert="high"><!-- 18.5 -->in omnem terram sonus eius</quote> exiret 
+                    adsumpsit.</seg></seg>
+                </p>
+            </div>            
+            
+            <div n="5">
+                <p>
+                    <seg type="portrait" subtype="nonbiblique" ana="Rouen">Denique nunc <placeName nymRef="Rouen">Rotomagum</placeName> et vicinis ante regionibus tenui nomine pervulgatum 
+                    in longinquis etiam provinciis nominari venerabiliter audimus 
+                    et inter urbes sacratis locis nobiles cum divina laude numerari. 
+                    Haud inmerito, 
+                    cum <seg type="comparaison" subtype="biblique" ana="Rouen" corresp="Jérusalem">totam illic, 
+                        qualis in <placeName nymRef="Orient">Oriente</placeName> memoratur, 
+                    <placeName nymRef="métaphore">Hierusales</placeName> faciem</seg> <persName type="persNT" ref="indexnominum.xml#apôtres">apostolorum</persName> quoque praesentia meritum <persName type="émetteur" ref="indexnominum.xml#Victricius">tuae sanctitatis</persName> adduxerit, 
+                        qui peregrinam memoriis suis urbem adfectu <persName type="saint" ref="indexnominum.xml#saint">sanctorum</persName> spirituum 
+                        et effectu operum divinorum sedibus suis conparant, 
+                            qui <seg type="métaphore" subtype="nonbiblique" ana="récepteur" corresp="asile">in te ipsum aptissimum sibi diversorium</seg> reppererunt. 
+                    Iuvat videlicet <seg type="portrait" subtype="nonbiblique" ana="indexnominum.xml#apôtres">amicos <persName type="dieu" ref="indexnominum.xml#Dieu">dei</persName> et principes populi veri <placeName nymRef="Israel">Israel</placeName> 
+                        id est <quote type="tissé" source="Ps." cert="medium"><!-- 148.14 -->populi adpropinquantis sibi</quote></seg> 
+                    in ea urbe remorari et cooperari tibi, 
+                        in qua cum <persName type="persAT" ref="indexnominum.xml#ange">angelis sanctis</persName> continua diebus ac noctibus <persName type="persNT" ref="indexnominum.xml#Christ">Christi domini</persName> praedicatione mulcentur, 
+                        in qua illis per devotissima fidelium corda famulorum plurimae virtutes amicae gratam requiem et familiare metantur hospitium, 
+                        ubi cotidiano <quote type="tissé" source="Ps." cert="medium"><!-- 46.8 -->sapienter psallentium</quote> per frequentes ecclesias et monasteria secreta concentu castissimis <seg type="métaphore" subtype="biblique" ana="indexnominum.xml#chrétiens" corresp="brebis">ovium tuarum</seg> et cordibus delectantur et vocibus. 
+                    Et nunc illos intemerata virginitas <seg type="métaphore" subtype="biblique" ana="corps" corresp="temple">in sacri <quote type="tissé" source="Jean" cert="low"><!-- NT: 2.21 -->corporis templo</quote></seg> tenet, 
+                        ut in visceribus pudicis requiescenti <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName> hospites faciat. 
+                    Nec minore eosdem voluptate sanctis operibus et pio ministratu inexpugnata noctu diuque <persName type="contemporain" ref="indexnominum.xml#veuve">famulantium viduarum</persName> pascit integritas 
+                    vel <seg type="portait" subtype="nonbiblique" ana="couple">subiugatorum <persName type="dieu" ref="indexnominum.xml#Dieu">deo</persName> coniugum arcana germanitas, 
+                        quae orationibus sedulis laetum in operibus suis <persName type="persNT" ref="indexnominum.xml#Christ">Christum</persName> ad visitationem non iam <quote type="tissé" source="I Mach." cert="low"><!-- 1.28 -->maritalis tori</quote> sed fraterni cubilis invitat, 
+                        cum ipso <persName type="saint" ref="indexnominum.xml#saints">sanctisque eius</persName> vicissim mixta concubitu castitatis spiritibus visitantium inmaculato amore confunditur.</seg> 
+                    Nunc vero per <quote type="tissé" source="Luc" cert="medium"><!-- NT: 1.78 ou Col. 3.2 -->misericordiae viscera</quote> reficiuntur 
+                    et <persName type="contemporain" ref="indexnominum.xml#chrétiens">in filiis pietatis atque iustitiae</persName> conquiescunt, 
+                        te <persName type="contemporain" ref="indexnominum.xml#chrétiens">in omnibus <persName type="récepteur" ref="indexnominum.xml#Victricius">eruditionis tuae</persName> filiis</persName> diligentes 
+                        et in te <persName type="persNT" ref="indexnominum.xml#Christ">Christum</persName> amantes 
+                        ac per hoc virtutes <persName type="dieu" ref="indexnominum.xml#Dieu">dei</persName> id est potentiam in <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName> suam in tua potissimum civitate, 
+                            ut consortem te suum testentur, 
+                        operantes.</seg>
+                </p>
+            </div>  
+            
+            <div n="6">
+                <p>
+                    Gratia illi et gloria, 
+                        qui <quote type="tissé" source="Ps." cert="medium"><!-- NT: 137,8 -->opera manuum suarum non omittens</quote> 
+                            »<quote type="tissé" source="I Tim." cert="high"><!-- 2.4 -->omnem hominem vult salvum fieri 
+                            et in agnitionem veritatis venire</quote>« 
+                        et <quote type="tissé" source="Es." cert="low"><!-- 52.7 -->pedibus evangelii</quote> toto orbe discurrens 
+                            te quoque <quote type="tissé" source="Rom." cert="medium"><!-- 10.15 -->speciosum verbi sui pedem</quote> facere, 
+                            in quo »<seg type="métaphore" subtype="biblique" ana="récepteur" corresp="géant"><quote type="tissé" source="Ps." cert="high"><!-- 18.6 -->exultaret ut gigans ad currendam viam«</quote></seg>, 
+                                et <quote type="tissé" source="Eph." cert="medium"><!-- NT: 6.15 -->in praeparationem evangelicam pacis suae vestigio calciare</quote> dignatus est, 
+                                    ut per te quoque »<quote type="tissé" source="Ps." cert="high"><!-- 90.13 -->super aspidem et basiliscum ambularet 
+                                    et concultaret leonem et draconem</quote>«. 
+                        <seg type="métaphore" subtype="biblique" ana="correspondant" corresp="lumière">Ac ne tam inlustris <quote type="tissé" source="Matth." cert="high"><!-- 5.15 -->lucerna sub modio</quote> taciturnitatis obscura latitaret, 
+                    sic te apostolicae sedis evectu quasi <quote type="tissé" source="Matth." cert="high"><!-- 5.15, Marc 4, 21-25 (Parabole de la lampe) -->super candelabrum sublime constituit, 
+                        ut tota domo multorum inluminatione luceres</quote>.</seg>
+                </p>
+            </div>     
+            
+            <div n="7">
+                <p>
+                    Sed quibus te itineribus <seg type="métaphore" subtype="nonbiblique" ana="vérité" corresp="chemin"><quote type="tissé" source="Jean" cert="medium"><!-- NT: 14.6 -->ad viam suae veritatis</quote></seg> adduxit? 
+                    <seg type="portrait" subtype="nonbiblique" ana="correspondat" corresp="indexnominum.xml#Victricius"><seg type="métaphore" subtype="nonbiblique" ana="indexnominum.xml#Victricius" corresp="soldat">Carnalibus muniis ad spiritalia suae virtutis instituens creavit initio militem, 
+                        quem postea elegit antistitem, 
+                        et passus est militare te <persName type="contemporain" ref="indexnominum.xml#empereur">Caesari</persName>, 
+                        ut <persName type="Dieu" ref="indexnominum.xml#Dieu">deo</persName> disceres militare, 
+                        ut 
+                            dum labore castrensi corporis robur exerces, 
+                        spiritalibus te proeliis roborares, 
+                        confessioni spiritum firmans et passioni corpus indurans.</seg> 
+                    Quod divinae providentiae circa te fuisse consilium ingens postea exitus tuus a militia et ingressus ad fidem docuit. 
+                    Cum primo <persName type="persNT" ref="indexnominum.xml#Christ">Christi</persName> amore suscensus ordinante <persName type="persNT" ref="indexnominum.xml#Christ">ipso domino</persName> quandam operis sui pompam 
+                    per insignem concilio militari diem progressus in campum es, 
+                    toto illo 
+                        quem iam mente respueras 
+                    muniminum bellicorum praecinctus ornatu 
+                        cunctisque mirantibus adcuratissimos in te habitus ac terribiles apparatus 
+                    repente obstupefacto conversus exercitu 
+                    ante pedes <persName type="contemporain" ref="indexnominum.xml#impies">sacrilegi tribuni</persName> militiae sacramenta permutans arma sanguinis abiecisti, 
+                            ut arma pacis indueres, contemnens armari ferro, 
+                            qui armabaris <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName>. 
+                    Et ilico <seg type="métaphore" subtype="biblique" ana="indexnominum.xml#diable" corresp="serpent"><quote type="tissé" source="Apoc." cert="high"><!-- NT: 12.9 ou 20.2 -->antiqui serpentis</quote></seg> invidia concitato in furias <persName type="contemporain" ref="indexnominum.xml#impies">tribuno</persName> districtus in verbera 
+                    et vastis fustibus fractus 
+                    nec tamen victus es, 
+                        quia crucis ligno innitebaris. 
+                    Geminataque mox corpori poena acuto testarum fragmine laniata inmanibus plagis membra substratus es, 
+                    tunc mollius fulciente <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName>, 
+                        cuius tibi <seg type="métaphore" subtype="biblique" ana="sein" corresp="lit">gremium lectulus</seg> erat et <seg type="métaphore" subtype="biblique" ana="main" corresp="coussin">dextra pulvinar</seg>. 
+                    Unde ad <persName type="contemporain" ref="indexnominum.xml#impies">maiorem hostem</persName> 
+                        necdum vulneribus obductis 
+                        accensa potius eorum dolore quam fracta virtute reparatus fortior prosiluisti 
+                    <persName type="contemporain" ref="indexnominum.xml#impies">oblatusque comiti</persName> de potentiore inimico gloriosius triumphasti. 
+                    Nec ausis ultra <persName>diaboli satellitibus</persName> superata ingerere tormenta capitalemque sententiam meditantibus, 
+                        ut vel fine carnalis tuae vitae vinci desinerent, 
+                    »<quote type="tissé" source="Ps." cert="medium"><!-- 23.8 --><persName type="persNT" ref="indexnominum.xml#Christ">dominus noster fortis et potens et invictus in proelio</persName></quote>« conspicuis mirabilibus pectora quamlibet obdurata confudit. 
+                    Nam <persName type="contemporain" ref="indexnominum.xml#impies">carnifex</persName>, 
+                        qui in itinere, 
+                        quo percussorem tuum sacra victima sequebaris, 
+                    cervicem tuam insultans minaciter adtingendi temeritate violaverat, 
+                    quasi ictus sui locum praecurrente gladium manu palpans, 
+                    excussis ilico oculis caecitate percussus est. 
+                    O <persName type="persNT" ref="indexnominum.xml#Christ">Christi</persName> ineffabilis bonitas quantum in suos ostendit affectum! 
+                    Iniuriam <persName type="récepteur" ref="indexnominum.xml#Victricius">confessoris sui</persName> non tulit inpunitam 
+                            qui <quote type="tissé" source="Luc" cert="low"><!-- 23.34 --><persName type="contemporain" ref="indexnominum.xml#impies">suis crucifixoribus</persName> rogavit ignosci</quote>, 
+                    <quote type="tissé" source="Augustin" cert="low"><!-- De utilitate credendi, 17, 35 -->contumeliam <persName type="récepteur" ref="indexnominum.xml#Victricius">martyris</persName></quote> statim ultus est 
+                        qui passionem noluit vindicari. 
+                    Sed ea ipsa ira pietatis est. 
+                    Idcirco enim unus caecatus est, 
+                        ut plures inluminarentur 
+                        et ipse forsitan, 
+                            qui oculos carnis amiserat, 
+                        <quote type="tissé" source="Ovide" cert="low"><!-- NT: Met. 4,194 -->lumina mentis</quote> acciperet. 
+                    Statim denique maiore documento 
+                        qui <persName type="contemporain" ref="indexnominum.xml#impies">feralis custodiae</persName> ministerium triste curabant, 
+                            quas ipsi artius innodatas et ad ossa depressas vel exiguo rogantibus vobis beneficio relaxare noluerant catenas, 
+                    conversa in conspectu ipsorum prece vestra ad <persName type="persNT" ref="indexnominum.xml#Christ">deum Christum</persName> sponte de manibus absolutis fluere viderunt 
+                    nec ausi renectere 
+                        quod <persName type="Dieu" ref="indexnominum.xml#Dieu">deus</persName> solverat ad <persName type="contemporain" ref="indexnominum.xml#impies">comitem</persName> pavidi cucurrerunt, 
+                    veritatem <persName type="Dieu" ref="indexnominum.xml#Dieu">dei</persName> pro <persName type="contemporain" ref="indexnominum.xml#chrétiens">confessoribus</persName> confitentes. 
+                    Quod auditum religiose et creditum <persName type="contemporain" ref="indexnominum.xml#impies">comes</persName> <persName type="contemporain" ref="indexnominum.xml#empereur">principi suo</persName> cum testimonio militum retulit, 
+                    et, 
+                        ut ipsius quoque repentina ad clementiam de furore conversio inter mirabilia <persName type="Dieu" ref="indexnominum.xml#Dieu">dei</persName> numeraretur, 
+                    factus est in te <persName type="récepteur" ref="indexnominum.xml#Victricius">praedicator Christi</persName>, 
+                        in quo esse devoverat <persName type="contemporain" ref="indexnominum.xml#impies">persecutor</persName>. 
+                    Puto 
+                    et ipsum tamquam <quote type="tissé" source="I Sam." cert="medium"><!-- 19.23 --><persName type="persAT" ref="indexnominum.xml#Saul">Saulem</persName> aliquando <persName type="persAT" ref="indexnominum.xml#esprit">spiritu sancto </persName> <persName type="persNT" ref="indexnominum.xml#Christ">dominus</persName> inpleverat</quote>, 
+                        quia et <seg type="métaphore" subtype="biblique" ana="récepteur" corresp="David">te sicut <persName type="persAT" ref="indexnominum.xml#David">David</persName> suum</seg> diligebat, 
+                            ut sicut <persName type="persAT" ref="indexnominum.xml#Saul">ille rex</persName> quondam, 
+                                dum ad <persName type="persAT" ref="indexnominum.xml#prophète">prophetas</persName> persequendos proficiscitur, 
+                            affectus est, 
+                    <seg type="métaphore" subtype="biblique" ana="comte" corresp="Saul">ita et <persName type="contemporain" ref="indexnominum.xml#impies">comes ille</persName> respersus gratia <persName type="persNT" ref="indexnominum.xml#Christ">domini</persName></seg>, 
+                        quae de fidei tuae abundantia redundabat, 
+                        qui ad puniendum <persName type="récepteur" ref="indexnominum.xml#Victricius">confessorem</persName> venerat, 
+                    et ipse confessus abscederet. 
+                    Credidit enim et 
+                        quos saeviens praedamnarat ut <persName type="contemporain" ref="indexnominum.xml#chrétiens">reos</persName> 
+                        laudans emisit ut <persName type="contemporain" ref="indexnominum.xml#chrétiens">sanctos</persName> 
+                    et <quote type="tissé" source="Jean" cert="high"><!-- NT: 5.33 ou 18,37 ou III Jean 2-->testimonium perhibuit veritati</quote> 
+                        qui <persName type="contemporain" ref="indexnominum.xml#chrétiens">testes fidei</persName> punire cupiebat.</seg>
+                </p>
+            </div>            
+            
+            <div n="8">
+                <p>
+                    Quid ergo miremur tam potentem te esse meritorum, 
+                    tam divitem gratiarum, 
+                    cum hoc tibi fuerit virtutum in <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName> rudimentum, 
+                        quod longorum laborum paucis consummatio est? 
+                    Dubitemus etiam nunc an perfectus sis, 
+                        qui de perfectione coepisti? 
+                    <seg type="métaphore" subtype="biblique" ana="combat" corresp="conversion">Et si <quote type="tissé" source="II Tim." cert="medium"><!-- NT: 2.5 -->legitime coronandus sis agone decurso</quote>, 
+                        cum currere coeperis a corona?</seg> 
+                    »<quote type="tissé" source="Ps." cert="high"><!-- 54.7 -->Quis daret nobis pennas <seg type="comparaison" subtype="biblique" ana="indexnominum.xml#chrétiens" corresp="colombe">sicut columbae</seg>? 
+                    Et volaremus ad te 
+                    et requiesceremus</quote>« in conspectu <persName type="récepteur" ref="indexnominum.xml#Victricius">sanctitatis tuae</persName>, 
+                        coram in ore tuo <persName type="persNT" ref="indexnominum.xml#Christ">Christum dominum</persName> admirantes atque venerantes, 
+                    <seg type="métaphore" subtype="biblique" ana="indexnominum.xml#Victricius" corresp="indexnominum.xml#Christ"><quote type="tissé" source="Luc" cert="high"><!-- 7.38 -->tergeremus capillis pedes illius in tuis pedibus 
+                    et lacrimis rigaremus</quote> 
+                    et in illis cicatricibus tuis quasi dominicae passionis inpressa vestigia lamberemus</seg>. 
+                    »<quote type="tissé" source="Prov." cert="medium"><!-- 27.6 -->Suaviora enim sunt vulnera amici 
+                        quam oscula inimici.</quote> 
+                    <quote type="tissé" source="Es." cert="medium"><!-- 6.5 -->Vae mihi misero peccatori inmunda labia habenti</quote>«, 
+                        cui fructus iste non contigit, cum <quote type="tissé" source="juridique">in manu fuerit</quote>.
+                </p>
+            </div>            
+            
+            <div n="9">
+                <p>
+                    Meminisse enim credo dignaris, 
+                        quia <persName type="récepteur" ref="indexnominum.xml#Victricius">sanctitatem tuam</persName> olim <placeName nymRef="Vienne">Viennae</placeName> apud <persName type="contemporain" ref="indexnominum.xml#Martin">beatum patrem nostrum Martinum</persName> viderim, 
+                            <seg type="comparaison" subtype="nonbiblique" ana="indexnominum.xml#Victricius" corresp="indexnominum.xml#Martin">cui te <persName type="persNT" ref="indexnominum.xml#Christ">dominus</persName> in aetate inpari parem fecit</seg>. 
+                    Ex illo igitur licet brevi notitia te attigerim, 
+                    tamen magna dilectione conplexus sum 
+                    et quanta tunc licuit copia veneratus sum <persName type="récepteur" ref="indexnominum.xml#Victricius">sanctitatem tuam</persName> 
+                    et <seg type="portrait" subtype="nonbiblique" ana="émetteur" corresp="indexnominum.xml#Paulinus">me ac meos, 
+                            qui te absentes, 
+                                tamen quia <seg type="métaphore" subtype="biblique" ana="plusieurs" corresp="un"><quote type="tissé" source="Marius Victorinus" cert="low"><!-- NT: Commentarii in Ep. ad Galatas, 1, 3, 20 -->iungente <persName type="persNT" ref="indexnominum.xml#Christ">Christo</persName></quote> unum sumus</seg>, 
+                            per me videbant, 
+                    commendavi in aeternum tibi, 
+                    gaudeoque nunc, 
+                        quod hoc saltem mihi gloriari licet, 
+                        quia <quote type="tissé" source="Col." cert="high"><!-- NT: 2.1 -->faciem tuam in carne viderim</quote>, 
+                    sed lugeo neglegentiam infelicitatis meae, 
+                        quod occasionem tanti boni ignarus amiserim 
+                        et <seg type="métaphore" subtype="nonbiblique" ana="péché" corresp="ténèbre">contenebrantibus me illo tempore non solum peccatis</seg>, 
+                            quibus etiam nunc premor, 
+                        sed et curis huius saeculi, 
+                            quibus nunc <persName type="Dieu" ref="indexnominum.xml#Dieu">propitio deo</persName> liber sum, 
+                        <seg type="métaphore" subtype="nonbiblique" ana="indexnominum.xml#Victricius" corresp="martyr"><persName type="récepteur" ref="indexnominum.xml#Victricius">sacerdotem</persName> te tantum, 
+                            quod in medio erat, 
+                        viderim et, 
+                            quod inerat insignius, 
+                        <persName type="récepteur" ref="indexnominum.xml#Victricius">martyrem vivum</persName> videre nescierim.</seg></seg>
+                </p>
+            </div>            
+            
+            <div n="10">
+                <p>
+                    <seg type="potrait" subtype="nonbiblique" ana="récepteur" corresp="indexnominum.xml#Victricius"><seg type="topoi" subtype="formulaire"><quote type="tissé" source="Virgile" cert="medium"><!-- NT: En. 6, 660-665 -->Memineris, 
+                        quaeso te, 
+                    nostri in illa die, 
+                        qua 
+                            ad te innumera meritorum tuorum cohorte comitatum 
+                            ornamentisque felicibus comptum 
+                            et infulis pariter atque adoreis coronatum 
+                        et niveas sacratorum antistitum vittas et floridas confessorum purpuras occurrentium manus adferent <persName type="persAT" ref="indexnominum.xml#anges">angelorum</persName></quote></seg>
+                        teque ipsum 
+                            »ut <quote type="tissé" source="Ps." cert="high"><!-- 11.7 -->argentum igne examinatum</quote> 
+                            et <quote type="tissé" source="Sap." cert="medium"><!-- 3.6 -->aurum in fornace« saeculi huius »probatum</quote>«</seg>  
+                        <seg type="portrait" subtype="biblique" ana="Dieu" corresp="indexnominum.xml#Dieu"><persName type="Dieu" ref="indexnominum.xml#Dieu">ipse summus auri sui argentique purgator</persName> accipiet 
+                        et 
+                            ut <quote type="tissé" source="Matth." cert="low"><!-- NT: 13, 46 -->pretiosam diademati suo margaritam</quote> 
+                        <persName type="Dieu" ref="indexnominum.xml#Dieu">rex aeternus</persName><!-- Ep. 23,30: Jésus --> aptabit 
+                        nec tuarum tibi tantum praemia se debere virtutum <persName type="Dieu" ref="indexnominum.xml#Dieu">iudex iustus</persName> agnoscet,</seg> 
+                            videns innumeros circa te <persName type="contemporain" ref="indexnominum.xml#saint">sanctorum utriusque sexus greges</persName>, 
+                                quos illi cotidie institutis tuis generas, 
+                                    <seg type="métaphore" subtype="nonbiblique" ana="indexnominum.xml#Victricius" corresp="règle">formula omnibus perfectae virtutis et fidei</seg>; 
+                                    <seg type="comparaison" subtype="nonbiblique" ana="indexnominum.xml#Paschasius" corresp="indexnominum.xml#Victricius">sicut et <persName type="porteur" ref="indexnominum.xml#Paschasius">frater Paschasius</persName> ostendit</seg>, 
+                                        in cuius gratia et humanitate quasi quasdam virtutum gratiarumque tuarum lineas velut speculo reddente collegimus. 
+                        <seg type="portrait" subtype="nonbiblique" ana="récepteur" corresp="indexnominum.xml#Victricius">Vere tu <seg type="métaphore" subtype="nonbiblique" ana="indexnominum.xml#Victricius" corresp="père">beatus tot beatorum parens</seg>, 
+                        <seg type="métaphore" subtype="nonbiblique" ana="indexnominum.xml#Victricius" corresp="semeur">tantae messis sator, 
+                        <quote type="tissé" source="Matth." cert="high"><!-- 13.8, Marc 4, 1-20 (Parabole du semeur) -->centenum et sexagesimum ac tricesimum fructum</quote> deo fecunditate tuae terrae efferens 
+                            et mensuram parem de variis partuum tuorum fructibus recepturus</seg>. 
+                        Te <persName type="Dieu" ref="indexnominum.xml#Dieu">altissimus</persName> inter regni sui maximos nominavit, 
+                            cui concessit facto aequare sermonem, 
+                                ut et doctrina tibi vitae tuae sit 
+                                et vita doctrinae. </seg>
+                        Quo fit, 
+                            ut nemo se audeat excusare <persName type="contemporain" ref="indexnominum.xml#disciple">discipulus</persName> velut difficultatis imperio, 
+                                cum prius adstringatur virtutis exemplo.
+                </p>
+            </div>   
+        </body>
+        <back>
+            <div type="sommaire">
+               <div xml:id="n000">
+                   <p> §1-3: Salutations et nouvelles</p>
+                        <list>
+                            <item>La rencontre de Paschasius à Rome.</item>
+                            <item>La maladie de Paulin et d'Ursus qui engendre le retard de Paschasius</item>
+                            
+                        </list>
+                    <p>§4-8: Portrait de Victrice de Rouen</p>
+                        <list>
+                            <item>§4-5: le succès de l'activité de missionnaire de Victrice</item>
+                            <item>§6: éloge sous forme de centon biblique</item>
+                            <item>§7: abandon de la vie militaire et <hi style="font-style: italic">passio Victricii</hi></item>
+                            <item>§8: éloge de Victrice</item>
+                        </list>
+                    <p>§9-10:Rappel de la rencontre tripartite avec Martin et demande de prière</p>
+               </div>
+            </div>
+            <div type="footnote">
+                <p xml:id="n0"> 
+                    <list>
+                        <item>Émetteur: Paulin de Nole</item>
+                        <item>Destinataire: Victrice de Rouen</item>
+                        <item>Date: 397-399</item>
+                        <item>Lieu: Nole, Campanie</item>
+                        <item>Visée: première prise de contact, se rendre agréable à son interlocuteur, rappeler les liens préexistants</item>
+                    </list>
+                </p>
+            <div type="analyse">
+                <div xml:id="analyse1"/>
+                <div xml:id="analyse2">
+                    <p xml:id="analyse2.1">
+                        <hi style="color:red">Memineris</hi>, quaeso te, 
+                        nostri in illa die, 
+                        qua ad te innumera meritorum tuorum cohorte <hi style="text-decoration:underline; text-decoration-color:red">comitatum</hi> 
+                        ornamentisque felicibus <hi style="text-decoration:underline; text-decoration-color:red">comptum</hi> 
+                        et infulis pariter atque adoreis <hi style="text-decoration:underline; text-decoration-color:red">coronatum</hi> 
+                        et <hi style="color:red">niveas</hi> sacratorum antistitum <hi style="color:red">vittas</hi> 
+                        et floridas confessorum purpuras occurrentium <hi style="color:red">manus</hi> adferent angelorum.
+                    </p>
+                    <p xml:id="analyse2.2">
+                        <l n="660">Hic <hi style="color:red">manus</hi> <hi style="color:purple">ob patriam pugnando uolnera passi</hi>,</l> 
+                        <l><hi style="text-decoration:underline; text-decoration-color:red">quique</hi> <hi style="color:purple">sacerdotes casti</hi>, dum uita manebat,</l> 
+                        <l><hi style="text-decoration:underline; text-decoration-color:red">quique</hi> <hi style="color:purple">pii uates</hi> et Phoebo digna locuti,</l> 
+                        <l>inuentas aut qui uitam excoluere per artes,</l> 
+                        <l><hi style="text-decoration:underline; text-decoration-color:red">quique</hi> <hi style="color:purple">sui memores alios fecere merendo</hi>,</l> 
+                        <l n="665">omnibus his <hi style="color:red">niuea</hi> cinguntur tempora <hi style="color:red">uitta</hi>.</l>
+                    
+                        <bibl>Virgile, <hi style="font-style:italic;">Énéide</hi>, 6, 660-665</bibl>
+                    </p>
+                </div>
+                    
+            </div>
+              
+            </div>
+        </back>
+    </text>
+</TEI>
