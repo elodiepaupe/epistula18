@@ -5,5 +5,6 @@ Pour voir s'afficher le fichier de la présentation, téléchargez d'abord le lo
 
 Le fichier 18epistula.xml n'est pas propre, mais il est valide du point de vue de la TEI: les commentaires (<!-- -->) sont destinés à disparaître. 
 Il contient des éléments d'analyse dans le <front> et le <back>.
+Les fichiers .xml s'ouvent dans n'importe quel éditeur de texte (word, textedit, etc.).
 
 Le fichier .css n'a pas été toiletté.
